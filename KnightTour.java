@@ -6,10 +6,10 @@ public class KnightTour {
 
 
     public Boolean kTour(int r, int c, int move){
-       if(move == 64){
+       if(move == 65){
            return true;
        }
-       if(move == 0){
+       if(move == 1){
            board[r][c] = move;
            move++;
        }
@@ -33,7 +33,7 @@ public class KnightTour {
     }
     public static void main(String[] args){
         KnightTour tour = new KnightTour();
-        tour.kTour(0,4,1);
+        tour.kTour(0,0,1);
         for(int i = 0; i<8; i++)
         {
             for(int j = 0; j<8; j++)
